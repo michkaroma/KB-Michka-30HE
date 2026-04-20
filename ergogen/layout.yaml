@@ -6,6 +6,8 @@ units:
 points:
   zones:
     matrix:
+      anchor:
+        shift: [150, -150]
       key:
         width: kx
         height: ky
@@ -151,3 +153,14 @@ outlines:
     - name: board
     - operation: subtract
       name: keys_outline
+pcbs.first:
+  outlines:
+    main.outline: board
+  footprints:
+    he_switch:
+      what: HESwitch_Michka
+      where: true
+      params:
+        from: "{{column_net}}"
+        to: "{{colrow}}"
+        gnd: "GND"
