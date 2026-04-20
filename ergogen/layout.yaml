@@ -1,3 +1,8 @@
+units:
+  u: 19
+  kx: 18
+  ky: 18
+
 points:
   zones:
     matrix:
@@ -63,3 +68,86 @@ points:
             width: kx
             spread: (kx)*2 -2.5
       rows.r5:
+outlines:
+  keys_normal:
+    - what: rectangle
+      where: /matrix_col[1-5]/
+      size: [kx-0.5, ky-0.5]
+
+  keys_col0_r1:
+    - what: rectangle
+      where: /matrix_col0_r1/
+      size: [kx-0.5, ky-0.5]
+
+  keys_col6_r1:
+    - what: rectangle
+      where: /matrix_col6_r1/
+      size: [kx-0.5, ky-0.5]
+
+  keys_col0_r2:
+    - what: rectangle
+      where: /matrix_col0_r2/
+      size: [23.83, ky-0.5]  # 24+1/3 - 0.5
+
+  keys_col0_r3:
+    - what: rectangle
+      where: /matrix_col0_r3/
+      size: [30.17, ky-0.5]  # 30+2/3 - 0.5
+
+  keys_col0_r4:
+    - what: rectangle
+      where: /matrix_col0_r4/
+      size: [36.5, ky-0.5]  # 37 - 0.5
+
+  keys_thumb_normal:
+    - what: rectangle
+      where: /thumb_col[0-2]/
+      size: [kx+2.5, ky-0.5]
+
+  keys_thumb_col4:
+    - what: rectangle
+      where: /thumb_col4/
+      size: [kx-0.5, ky-0.5]
+
+  keys_thumb_spacebar:
+    - what: rectangle
+      where: /thumb_col3/
+      size: [(kx+5)*2+0.5, ky-0.5]  # (kx+5)*2+1 - 0.5
+
+  keys_outline:
+    - what: outline
+      name: keys_normal
+    - what: outline
+      name: keys_col0_r1
+    - what: outline
+      name: keys_col6_r1
+    - what: outline
+      name: keys_col0_r2
+    - what: outline
+      name: keys_col0_r3
+    - what: outline
+      name: keys_col0_r4
+    - what: outline
+      name: keys_thumb_normal
+    - what: outline
+      name: keys_thumb_col4
+    - what: outline
+      name: keys_thumb_spacebar
+
+  board:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: matrix_col0_r1
+          shift: [-10.5,10.5]  
+        - ref: matrix_col6_r1
+          shift: [10.5,10.5]  
+        - ref: thumb_col4_r5
+          shift: [10.5,-10.5]  
+        - ref: thumb_col0_r5
+          shift: [-12,-10.5]
+      fillet: 2
+  combo:
+    - name: board
+    - operation: subtract
+      name: keys_outline
