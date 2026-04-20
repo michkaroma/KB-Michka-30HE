@@ -153,14 +153,99 @@ outlines:
     - name: board
     - operation: subtract
       name: keys_outline
-pcbs.first:
-  outlines:
-    main.outline: board
-  footprints:
-    he_switch:
-      what: HESwitch_Michka
-      where: true
-      params:
-        from: "{{column_net}}"
-        to: "{{colrow}}"
-        gnd: "GND"
+pcbs:
+  first:
+    outlines:
+      main.outline: board
+    footprints:
+      he_switch:
+        what: HESwitch_Michka
+        where: true
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+          gnd: "GND"
+      mux:
+        what: ADG732
+        where:
+          aggregate:
+            parts:
+              - ref: matrix_col0_r1
+                shift: [-30, 0]
+        params:
+          S1: "key_col0_r1"
+          S2: "key_col1_r1"
+          S3: ""
+          S4: ""
+          S5: ""
+          S6: ""
+          S7: ""
+          S8: ""
+          S9: ""
+          S10: ""
+          S11: ""
+          S12: ""
+          S13: ""
+          S14: ""
+          S15: ""
+          S16: ""
+          S17: ""
+          S18: ""
+          S19: ""
+          S20: ""
+          S21: ""
+          S22: ""
+          S23: ""
+          S24: ""
+          S25: ""
+          S26: ""
+          S27: ""
+          S28: ""
+          S29: ""
+          S30: ""
+          S31: ""
+          S32: ""
+          A0: "MUX_A0"
+          A1: "MUX_A1"
+          A2: "MUX_A2"
+          A3: "MUX_A3"
+          A4: "MUX_A4"
+          CS: "MUX_CS"
+          WR: "MUX_WR"
+          EN: "MUX_EN"
+          D: "MUX_D"
+          VDD: "VDD"
+          VSS: "GND"
+          GND: "GND"
+          EPAD: "GND"
+      mcu:
+        what: RP2040_Zero
+        where:
+          aggregate:
+            parts:
+              - ref: matrix_col0_r1
+                shift: [-30, -40]
+        params:
+          GP0: "MUX_A0"
+          GP1: "MUX_A1"
+          GP2: "MUX_A2"
+          GP3: "MUX_A3"
+          GP4: "MUX_A4"
+          GP5: "MUX_CS"
+          GP6: "MUX_WR"
+          GP7: "MUX_EN"
+          GP8: "MUX_D"
+          GP9: ""
+          GP10: ""
+          GP11: ""
+          GP12: ""
+          GP13: ""
+          GP14: ""
+          GP15: ""
+          GP26: ""
+          GP27: ""
+          GP28: ""
+          GP29: ""
+          GP30: ""
+          GP31: ""
+          GP32: ""
