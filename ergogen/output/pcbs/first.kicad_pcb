@@ -2689,7 +2689,7 @@
 
     (footprint "ADG732"
       (layer "B.Cu")
-      (at 251.1666667 131 0)
+      (at 253.1666667 131 0)
 
       (property "Reference" "REF**"
         (at 0 -4.8 0)
@@ -2793,7 +2793,7 @@
 
     (footprint "RP2040_Zero"
       (layer "F.Cu")
-      (at 246.83333340000001 109.5 0)
+      (at 254.83333340000001 109.5 -90)
 
       (property "Reference" "REF**"
         (at 1.27 0 0)
@@ -2843,12 +2843,12 @@
     )
   
   (gr_line (start 121 177.5) (end 121 84.5) (angle 90) (layer Edge.Cuts) (width 0.15))
-(gr_line (start 123 82.5) (end 258.0000001 82.5) (angle 90) (layer Edge.Cuts) (width 0.15))
-(gr_line (start 260.0000001 84.5) (end 260.0000001 177.5) (angle 90) (layer Edge.Cuts) (width 0.15))
-(gr_line (start 258.0000001 179.5) (end 123 179.5) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 123 82.5) (end 262.5000001 82.5) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 264.5000001 84.5) (end 264.5000001 177.5) (angle 90) (layer Edge.Cuts) (width 0.15))
+(gr_line (start 262.5000001 179.5) (end 123 179.5) (angle 90) (layer Edge.Cuts) (width 0.15))
 (gr_arc (start 123 84.5) (end 123 82.5) (angle -90) (layer Edge.Cuts) (width 0.15))
-(gr_arc (start 258.0000001 84.5) (end 260.0000001 84.5) (angle -90) (layer Edge.Cuts) (width 0.15))
-(gr_arc (start 258.0000001 177.5) (end 258.0000001 179.5) (angle -90) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 262.5000001 84.5) (end 264.5000001 84.5) (angle -90) (layer Edge.Cuts) (width 0.15))
+(gr_arc (start 262.5000001 177.5) (end 262.5000001 179.5) (angle -90) (layer Edge.Cuts) (width 0.15))
 (gr_arc (start 123 177.5) (end 121 177.5) (angle -90) (layer Edge.Cuts) (width 0.15))
 
 )
