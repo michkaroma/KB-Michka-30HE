@@ -165,13 +165,48 @@ pcbs:
           from: "{{column_net}}"
           to: "{{colrow}}"
           gnd: "GND"
+      screw1:
+        what: mountinghole
+        where:
+          - ref: matrix_col0_r1
+            shift: [14, -11]
+        params:
+          net: "GND"
+      screw2:
+        what: mountinghole
+        where:
+          - ref: matrix_col5_r1
+            shift: [9.5, -9]
+        params:
+          net: "GND"
+      screw3:
+        what: mountinghole
+        where:
+          - ref: matrix_col5_r4
+            shift: [-10, -11]
+        params:
+          net: "GND"
+      screw4:
+        what: mountinghole
+        where:
+          - ref: matrix_col0_r4
+            shift: [14, 0]
+        params:
+          net: "GND"
+      screw5:
+        what: mountinghole
+        where:
+          - ref: matrix_col3_r2
+            shift: [-3, -10]
+        params:
+          net: "GND"
       mux:
         what: ADG732
         where:
           aggregate:
             parts:
               - ref: matrix_col5_r3
-                shift: [14, 0]
+                shift: [14.5, 0]
         params:
           S1: "col0_r1"
           S2: "col1_r1"
