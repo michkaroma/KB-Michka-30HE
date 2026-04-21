@@ -143,9 +143,9 @@ outlines:
         - ref: matrix_col0_r1
           shift: [-10.5,10.5]  
         - ref: matrix_col6_r1
-          shift: [10.5,10.5]  
+          shift: [14.5,10.5]  
         - ref: thumb_col4_r5
-          shift: [10.5,-10.5]  
+          shift: [14.5,-10.5]  
         - ref: thumb_col0_r5
           shift: [-12,-10.5]
       fillet: 2
@@ -170,39 +170,39 @@ pcbs:
         where:
           aggregate:
             parts:
-              - ref: matrix_col0_r1
-                shift: [-30, 0]
+              - ref: matrix_col5_r3
+                shift: [12, 0]
         params:
-          S1: "key_col0_r1"
-          S2: "key_col1_r1"
-          S3: ""
-          S4: ""
-          S5: ""
-          S6: ""
-          S7: ""
-          S8: ""
-          S9: ""
-          S10: ""
-          S11: ""
-          S12: ""
-          S13: ""
-          S14: ""
-          S15: ""
-          S16: ""
-          S17: ""
-          S18: ""
-          S19: ""
-          S20: ""
-          S21: ""
-          S22: ""
-          S23: ""
-          S24: ""
-          S25: ""
-          S26: ""
-          S27: ""
-          S28: ""
-          S29: ""
-          S30: ""
+          S1: "col0_r1"
+          S2: "col1_r1"
+          S3: "col2_r1"
+          S4: "col3_r1"
+          S5: "col4_r1"
+          S6: "col5_r1"
+          S7: "col6_r1"
+          S8: "col0_r2"
+          S9: "col1_r2"
+          S10: "col2_r2"
+          S11: "col3_r2"
+          S12: "col4_r2"
+          S13: "col5_r2"
+          S14: "col0_r3"
+          S15: "col1_r3"
+          S16: "col2_r3"
+          S17: "col3_r3"
+          S18: "col4_r3"
+          S19: "col5_r3"
+          S20: "col0_r4"
+          S21: "col1_r4"
+          S22: "col2_r4"
+          S23: "col3_r4"
+          S24: "col4_r4"
+          S25: "col5_r4"
+          S26: "thumb0_r5"
+          S27: "thumb1_r5"
+          S28: "thumb2_r5"
+          S29: "thumb3_r5"
+          S30: "thumb4_r5"
           S31: ""
           S32: ""
           A0: "MUX_A0"
@@ -223,8 +223,8 @@ pcbs:
         where:
           aggregate:
             parts:
-              - ref: matrix_col0_r1
-                shift: [-30, -40]
+              - ref: matrix_col5_r2
+                shift: [14, 2.5]
         params:
           GP0: "MUX_A0"
           GP1: "MUX_A1"
