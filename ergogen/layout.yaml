@@ -247,14 +247,14 @@ pcbs:
           A2: "MUX_A2"
           A3: "MUX_A3"
           A4: "MUX_A4"
-          CS: "MUX_CS"
-          WR: "MUX_WR"
-          EN: "MUX_EN"
-          D: "MUX_D"
-          VDD: "VDD"
+          CS: "GND"
+          WR: "GND"
+          EN: "GND"
+          D: "AIN1"
+          VDD: "VCC"
           VSS: "GND"
           GND: "GND"
-          EPAD: "GND"
+          NIC: ""
       mcu:
         what: RP2040_Zero
         where:
