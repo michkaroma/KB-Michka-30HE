@@ -162,9 +162,10 @@ pcbs:
         what: HESwitch_Michka
         where: true
         params:
-          from: "{{column_net}}"
-          to: "{{colrow}}"
-          gnd: "GND"
+          GND: "GND"
+          VCC: "VCC"
+          signal: '{{colrow}}'
+          intern: 'Q_{{colrow}}'
       screw1:
         what: mountinghole
         where:
@@ -207,6 +208,7 @@ pcbs:
             parts:
               - ref: matrix_col5_r3
                 shift: [14.5, 0]
+                rotate: 180
         params:
           S1: "col0_r1"
           S2: "col1_r1"
