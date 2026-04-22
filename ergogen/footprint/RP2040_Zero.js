@@ -18,16 +18,16 @@ module.exports = {
     GP11: undefined,  // pad 11
     GP12: undefined,  // pad 12
     GP13: undefined,  // pad 13
-    GP14: undefined,  // pad 14
     // Côté gauche
+    GP14: undefined,  // pad 14
     GP15: undefined,  // pad 15
     GP26: undefined,  // pad 26
     GP27: undefined,  // pad 27
     GP28: undefined,  // pad 28
     GP29: undefined,  // pad 29
-    GP30: undefined,  // pad 30
-    GP31: undefined,  // pad 31
-    GP32: undefined,  // pad 32
+    V3v3: undefined,   // 3v3
+    GND: undefined,   // GND
+    V5: undefined,    // 5V
   },
   body: p => `
     (footprint "RP2040_Zero"
@@ -76,9 +76,9 @@ module.exports = {
       (pad "27" thru_hole circle (at -5.08  5.08) (size 1.524 1.524) (drill 0.762) (layers "*.Cu" "*.Mask") ${p.GP27})
       (pad "28" thru_hole circle (at -5.08  2.54) (size 1.524 1.524) (drill 0.762) (layers "*.Cu" "*.Mask") ${p.GP28})
       (pad "29" thru_hole circle (at -5.08  0)    (size 1.524 1.524) (drill 0.762) (layers "*.Cu" "*.Mask") ${p.GP29})
-      (pad "30" thru_hole circle (at -5.08 -2.54) (size 1.524 1.524) (drill 0.762) (layers "*.Cu" "*.Mask") ${p.GP30})
-      (pad "31" thru_hole circle (at -5.08 -5.08) (size 1.524 1.524) (drill 0.762) (layers "*.Cu" "*.Mask") ${p.GP31})
-      (pad "32" thru_hole circle (at -5.08 -7.62) (size 1.524 1.524) (drill 0.762) (layers "*.Cu" "*.Mask") ${p.GP32})
+      (pad "30" thru_hole circle (at -5.08 -2.54) (size 1.524 1.524) (drill 0.762) (layers "*.Cu" "*.Mask") ${p.V3v3})
+      (pad "31" thru_hole circle (at -5.08 -5.08) (size 1.524 1.524) (drill 0.762) (layers "*.Cu" "*.Mask") ${p.GND})
+      (pad "32" thru_hole circle (at -5.08 -7.62) (size 1.524 1.524) (drill 0.762) (layers "*.Cu" "*.Mask") ${p.V5})
     )
   `
 }
