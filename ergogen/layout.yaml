@@ -191,18 +191,6 @@ pcbs:
         where:
           - ref: matrix_col3_r2
             shift: [-3, -10]
-      C1:
-        what: C0805
-        where:
-          aggregate:
-            parts:
-              - ref: matrix_col5_r3
-                shift: [14.5, 0]
-                #rotate: 180
-        
-        params:
-          net_1: "VCC"
-          net_2: "GND"
       mux:
         what: ADG732
         where:
